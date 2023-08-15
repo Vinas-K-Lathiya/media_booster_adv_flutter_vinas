@@ -28,7 +28,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 android {
     namespace "com.example.audio_player"
     compileSdkVersion flutter.compileSdkVersion
-    ndkVersion 33
+    ndkVersion flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -49,16 +49,14 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         
-        minSdkVersion 22
-        targetSdkVersion 33
+        minSdkVersion 21
+        targetSdkVersion flutter.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
 
-        ndk {
-            moduleName "hello-android-jni"
-        }
+
     }
 
     buildTypes {

@@ -5,10 +5,10 @@ packages:
     dependency: "direct main"
     description:
       name: assets_audio_player
-      sha256: "504e46bc700af9aeb208bedbe63964b7edc7bc2a6cecbd92e38b1891d3ef642c"
+      sha256: ddcef722bd569797273dbb6d505b837250b4437651ecfbfdad74d4f0b64a1379
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.8"
+    version: "3.1.0"
   assets_audio_player_web:
     dependency: transitive
     description:
